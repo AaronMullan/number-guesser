@@ -7,7 +7,7 @@
 
 body {
     font-family: monospace;
-    color: #ffffff;
+    color: #f8ffd7;
     background-color: rgb(75, 75, 75)
 
 }
@@ -15,7 +15,8 @@ h1 {
     font-family: 'Creepster', cursive;
     font-size: 10em;
 }
-.one{
+.headline{
+    
     grid-column: none;
     grid-row: 1;
     text-align: center;
@@ -23,7 +24,8 @@ h1 {
     width: 100vw;
     align-items: center;
 }
-.two{
+.article{
+    font-family: 'Roboto Mono', monospace;
     grid-column: none;
     grid-row: 2;
     text-align: center;

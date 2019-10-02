@@ -1,9 +1,20 @@
+const guessButton = document.getElementById('guess-button');
 
+let guess = getElementById.getValue('number-guess')
 
-function compareNumbers = if (guess > correctNumber){
-        const comparison = 1
+guessButton.addEventListener('click', () => {
+    guessNumber = guessNumber + 1;
+
+console.log(guess);
+
+const correctNumber = 13;
+
+function compareNumbers(guess) {
+     if (guess > correctNumber){
+        return 1;
 }   else if (guess < correctNumber)  {
-        const comparison = -1
+        return -1;
 }   else {
-        const comparison = 0
+        return  0;
+}
 }
