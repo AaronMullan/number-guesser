@@ -32,4 +32,7 @@ h1 {
     text-justify: distribute;
     width: 100vw;
     align-items: center;
+    border-radius: 2em 5em 2em 5em / 3em 6em 3em 6em;
+    background-color:  #f8ffd7;
+    color:  rgb(75, 75, 75)
 }
