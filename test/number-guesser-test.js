@@ -12,7 +12,7 @@ test('time to test a function', function(assert) {
 
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(correctNumber, 13);
+    assert.equal(correctNumber, 13,);
     assert.equal(correctNumber < 13, false);
     assert.equal(correctNumber > 13, false);
 });
