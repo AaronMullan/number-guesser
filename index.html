@@ -6,12 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Number Guesser</title>
+    <link href="https://fonts.googleapis.com/css?family=Creepster|Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <div class="container">
+    <h1 class="headline">The Number Guesser</h1>
+  
+      <article class="article">
+          I am thinking of a number between 1 and 20.<br>
+          <span id="interaction">Try to guess the number. You have 4 guesses.</span><br>
 
-    <script src="app.js"></script>
+          <input type="text" id="user-number"><br>
+        <button id="guess-button">Guess a number 1-20</button>
+        <button class="hidden" id="play-again">PLAY AGAIN</button>
+      </article>
+
+
+
+
+  </div>
+    
+<script type="module" src="app.js"></script>
+
 </body>
 
 </html>

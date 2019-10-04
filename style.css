@@ -1,0 +1,44 @@
+.container{
+    display: grid;
+    grid-template-columns: 3;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+body {
+    font-family: monospace;
+    color: #f8ffd7;
+    background-color: rgb(75, 75, 75)
+
+}
+h1 {
+    font-family: 'Creepster', cursive;
+    font-size: 10em;
+}
+input { 
+    text-align: center; 
+}
+.headline{
+    
+    grid-column: none;
+    grid-row: 1;
+    text-align: center;
+    text-justify: distribute;
+    width: 100vw;
+    align-items: center;
+}
+.article{
+    font-family: 'Roboto Mono', monospace;
+    grid-column: none;
+    grid-row: 2;
+    text-align: center;
+    text-justify: distribute;
+    width: 100vw;
+    align-items: center;
+    border-radius: 2em 5em 2em 5em / 3em 6em 3em 6em;
+    background-color:  #f8ffd7;
+    color:  rgb(75, 75, 75)
+}
+.hidden{
+    display: hidden
+}
