@@ -1,21 +1,20 @@
 import numberComparisons from '../numberComparisons.js';
 
 const guessButton = document.getElementById('guess-button');
+const replayButton = document.getElementById('play-again');
 const userNumber = document.getElementById('user-number');
-let attempts = 4;
-//const correctNumber = 13;
+let attempts = 5;
 const correctNumber = (Math.ceil(Math.random() * 20));
+replayButton.addEventListener('click', ;
 guessButton.addEventListener('click', () => {
     
-    attempts = attempts - 1;
-    if (attempts === 0) document.getElementById('guess-button').disabled = true;
+  
 
     let userGuess = userNumber.value;
+    userGuess = parseInt(userGuess);
     console.log ('Userguess ' + userGuess);
 
     const correctness = numberComparisons(userGuess, correctNumber);
-    
-
     let messageToYou = ' ';
 
     if (correctness === 0) {
@@ -29,9 +28,15 @@ guessButton.addEventListener('click', () => {
         messageToYou = 'Your guess is too low. You have ' + attempts + ' more guesses.';
     }
     if (correctness === 2) {
-        messageToYou = 'You have entered invalid input.';
+        messageToYou = '🤮 You have entered invalid input. 🤮You have ' + attempts + ' more guesses';
     }
-    console.log('correctnumber' + correctNumber);
+    attempts = attempts - 1;
+    if (attempts === 0) {document.getElementById('guess-button').disabled = true;
+        messageToYou = 'YOU LOSE. TRY AGAIN TOMORROW.';}
+    
     const interaction = document.getElementById('interaction');
+    
     interaction.textContent = messageToYou;
+    console.log('correctnumber' + correctNumber);
+    console.log('correctness= ', correctness);
 });

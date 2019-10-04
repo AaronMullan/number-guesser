@@ -9,4 +9,5 @@ export default function numberComparisons(userGuess, correctNumber){
         return 0;
     }
     else return 2;
+    
 }
