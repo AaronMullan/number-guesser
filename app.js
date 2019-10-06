@@ -31,11 +31,11 @@ guessButton.addEventListener('click', () => {
         messageToYou = 'Your guess is too low. You have ' + attempts + ' more guesses.';
     }
     if (correctness === 2) {
-        messageToYou = '🤮 You have entered invalid input. 🤮You have ' + attempts + ' more guesses';
+        messageToYou = '🤮 You have entered invalid input. 🤮 You have ' + attempts + ' more guesses';
     }
     attempts = attempts - 1;
     if (attempts < 0) {document.getElementById('guess-button').disabled = true;
-        messageToYou = 'YOU LOSE. TRY AGAIN TOMORROW.';}
+        messageToYou = 'YOU LOSE. TRY AGAIN.';}
     
     const interaction = document.getElementById('interaction');
     
