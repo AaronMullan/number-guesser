@@ -1,4 +1,4 @@
-import numberComparisons from './numberComparisons';
+import numberComparisons from '/numberComparisons.js';
 
 const guessButton = document.getElementById('guess-button');
 const replayButton = document.getElementById('play-again');
