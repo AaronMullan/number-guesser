@@ -1,4 +1,4 @@
-import numberComparisons from '../numberComparisons.js';
+import numberComparisons from './numberComparisons.js';
 
 const guessButton = document.getElementById('guess-button');
 const replayButton = document.getElementById('play-again');
@@ -7,12 +7,9 @@ let attempts = 4;
 const correctNumber = (Math.ceil(Math.random() * 20));
 replayButton.addEventListener('click', () => {
 
-
 });
 guessButton.addEventListener('click', () => {
     
-  
-
     let userGuess = userNumber.value;
     userGuess = parseInt(userGuess);
     console.log ('Userguess ' + userGuess);
