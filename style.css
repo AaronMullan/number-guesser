@@ -3,6 +3,7 @@
     grid-template-columns: 3;
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+    align-items: center;
   }
 
 body {
@@ -33,7 +34,7 @@ input {
     grid-row: 2;
     text-align: center;
     text-justify: distribute;
-    width: 100vw;
+    width: 95vw;
     align-items: center;
     border-radius: 2em 5em 2em 5em / 3em 6em 3em 6em;
     background-color:  #f8ffd7;
