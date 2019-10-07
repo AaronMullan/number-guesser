@@ -1,4 +1,4 @@
-import numberComparisons from '../numberComparisons.js';
+import numberComparisons from './numberComparisons.js';
 
 const guessButton = document.getElementById('guess-button');
 const replayButton = document.getElementById('play-again');
@@ -7,12 +7,9 @@ let attempts = 4;
 const correctNumber = (Math.ceil(Math.random() * 20));
 replayButton.addEventListener('click', () => {
 
-
 });
 guessButton.addEventListener('click', () => {
     
-  
-
     let userGuess = userNumber.value;
     userGuess = parseInt(userGuess);
     console.log ('Userguess ' + userGuess);
@@ -31,11 +28,11 @@ guessButton.addEventListener('click', () => {
         messageToYou = 'Your guess is too low. You have ' + attempts + ' more guesses.';
     }
     if (correctness === 2) {
-        messageToYou = '🤮 You have entered invalid input. 🤮You have ' + attempts + ' more guesses';
+        messageToYou = '🤮 You have entered invalid input. 🤮 You have ' + attempts + ' more guesses';
     }
     attempts = attempts - 1;
     if (attempts < 0) {document.getElementById('guess-button').disabled = true;
-        messageToYou = 'YOU LOSE. TRY AGAIN TOMORROW.';}
+        messageToYou = 'YOU LOSE. TRY AGAIN.';}
     
     const interaction = document.getElementById('interaction');
     
